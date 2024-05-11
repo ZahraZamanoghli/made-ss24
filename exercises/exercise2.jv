@@ -25,7 +25,7 @@ pipeline TreesPipeline {
     }
 
     constraint CityName oftype RegexConstraint {
-        regex: /^Furth.*/;
+        regex: /^Furth-.*/;
     }
 
     valuetype ID oftype text {
