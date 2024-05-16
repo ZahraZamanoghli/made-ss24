@@ -10,7 +10,7 @@ Assessing the Role of Individual Consumption Behavior in Climate Change Mitigati
 
 <!-- Think about one main question you want to answer based on the data. -->
 
-1. What are the primary drivers of carbon emissions associated with individual consumption, and how do they compare across different categories of goods and services?
+1. How do the consumption patterns of individuals contribute to carbon emissions across diverse categories of goods and services?
 
 ## Description
 
@@ -25,7 +25,7 @@ XY is an important problem, because... This projects analyzes XY, using method A
 ### Datasource1: Consumption footprint
 
 - Metadata URL: https://data.europa.eu/data/datasets/uwxw0e70pgohx48bmhyqq?locale=en
-- Data URL:
+- Data URL: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_gsr010?format=SDMX-CSV&compressed=true
 - Data Type: CSV
 
 The indicator consumption footprint estimates the environmental impacts of EU and Member States consumption by combining data on consumption intensity and environmental impacts of representative products. The indicator covers five areas of consumption: food, mobility, housing, appliances, and household goods. Consumption intensities are calculated based on consumption statistics.
