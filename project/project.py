@@ -30,7 +30,7 @@ def download(url, ds_key):
 
 def transform(file_path):
     df = pd.read_csv(file_path)
-    df.drop(["DATAFLOW", "OBS_FLAG"], axis=1, inplace=True)
+    df.drop(["DATAFLOW", "LAST UPDATE", "freq", "OBS_FLAG"], axis=1, inplace=True)
     print(YELLOW + "Data transformed" + RESET)
     return df
 
