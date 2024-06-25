@@ -20,12 +20,13 @@ pipeline GTFSStopsPipeline {
     }
 
     block StopsTextFileInterpreter oftype TextFileInterpreter {
-        encoding: "latin4";
+        encoding: "utf8";
     }
 
     block StopsCSVInterpreter oftype CSVInterpreter {
         delimiter: ",";
         enclosing: '"';
+        enclosingEscape: '"';
     }
 
     constraint PositiveDataType oftype RangeConstraint {
@@ -45,11 +46,9 @@ pipeline GTFSStopsPipeline {
         constraints:[GeoCoordsDataType];
     }
     
-    constraint ZoneDataType oftype AllowlistConstraint {
-        allowlist: ["1645"];
-    }
+    constraint ZoneDataType on integer: value == 1645; 
 
-    valuetype ZoneData oftype text {
+    valuetype ZoneData oftype integer {
         constraints:[ZoneDataType];
     }
 
