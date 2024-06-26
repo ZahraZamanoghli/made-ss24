@@ -1,0 +1,30 @@
+name: Project CI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - project/**
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install requirements
+        run: |
+          pip install -r project/requirements.txt
+
+      - name: Run tests
+        run: |
+          chmod +x project/tests.sh
+          ./project/tests.sh
