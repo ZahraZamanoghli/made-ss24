@@ -14,7 +14,6 @@ data_dir = "../data"
 GREEN = '\033[32m'
 YELLOW = '\033[33m'
 CYAN = '\033[36m'
-BLUE = '\033[34m'
 RESET = '\033[0m'
 
 def get_filename_from_url(url):
